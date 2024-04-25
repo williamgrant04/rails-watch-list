@@ -1,0 +1,43 @@
+.create-list {
+  display: inline-block;
+  margin-top: 10px;
+  color: white;
+  text-decoration: none;
+  background-color: rgb(41, 41, 41);
+  padding: 5px 10px;
+  border-radius: 16px;
+  transition: 0.3s;
+  border: 2px solid transparent;
+
+  &:hover {
+    border: 2px solid rgba(41, 41, 41, 0.8);
+    background-color: rgb(236, 236, 236);
+    color: rgb(41, 41, 41);
+    border-radius: 8px;
+  }
+}
+
+.list-links {
+  display: inline-block;
+  margin-top: 10px;
+  color: rgb(41, 41, 41);
+  text-decoration: none;
+  background-color: rgb(236, 236, 236);
+  padding: 5px 10px;
+  border-radius: 16px;
+  transition: 0.3s;
+  border: 2px solid transparent;
+
+  &:hover {
+    border: 2px solid rgba(236, 236, 236, 0.8);
+    background-color: rgb(41, 41, 41);
+    color: rgb(236, 236, 236);
+    border-radius: 8px;
+  }
+}
+
+.lists {
+  display: flex;
+  flex-direction: column;
+  width: 10%;
+}

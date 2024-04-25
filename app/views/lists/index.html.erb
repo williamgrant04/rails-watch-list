@@ -1,4 +1,9 @@
-<h1>Lists</h1>
-<% @lists.each do |list| %>
-  <%= link_to list.name, list_path(list) %>
-<% end %>
+<h1 style="margin-bottom: 0px;">Lists</h1>
+
+<%= link_to "Create a list", new_list_path, class: "create-list" %>
+
+<div class="lists">
+  <% @lists.each do |list| %>
+    <%= link_to list.name, list_path(list), class: "list-links" %>
+  <% end %>
+</div>

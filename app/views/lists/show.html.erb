@@ -1,2 +1,15 @@
-<h1><%= @list.name %></h1>
-<%# I dont actually know what I should display here? %>
+<h1>List: <%= @list.name %></h1>
+
+<%= link_to "New bookmark", bookmarks_path, class: "new-link" %>
+
+<div class="cards">
+  <% @bookmarks.each do |bookmark| %>
+    <div class="card">
+      <h2 class="movie-title"><%= bookmark.movie.title %></h2>
+      <p class="comment"><%= bookmark.comment %></p>
+      <%= link_to "Delete", delete_bookmark_path(bookmark), data: {turbo_method: :delete}%>
+    </div>
+  <% end %>
+</div>
+
+<%= link_to "All lists", root_path, class: "all-link" %>

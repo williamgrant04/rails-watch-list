@@ -7,3 +7,14 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+// Google fonts
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+  font-family: "Noto Sans", sans-serif;
+}
+
+.page-container {
+  margin: 20px 10vw;
+}
