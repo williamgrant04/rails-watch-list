@@ -4,8 +4,10 @@
 
 <div class="lists">
   <% @lists.each do |list| %>
-    <div style="background-image: url(<%= cl_image_url %>);">
-      <%= link_to list.name, list_path(list), class: "list-links" %>
-    </div>
+    <%= link_to list_path(list) do %>
+      <div style="background-image: url('<%= list.image.key ? cl_image_path(list.image.key) : "" %>');">
+        <h2 class="list-link"><%= list.name %></h2>
+      </div>
+    <% end %>
   <% end %>
 </div>

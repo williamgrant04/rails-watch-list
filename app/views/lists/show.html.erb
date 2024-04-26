@@ -2,7 +2,7 @@
 
 <%= link_to "New bookmark", bookmarks_path, class: "new-link" %>
 
-<div class="cards">
+<div class="cards" style="background-image: url('<%= @list.image.key ? cl_image_path(@list.image.key) : "" %>');">
   <% @bookmarks.each do |bookmark| %>
     <div class="card">
       <h2 class="movie-title"><%= bookmark.movie.title %></h2>

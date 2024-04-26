@@ -17,7 +17,7 @@
   }
 }
 
-.list-links {
+.list-link {
   display: inline-block;
   margin-top: 10px;
   color: rgb(41, 41, 41);
@@ -37,7 +37,7 @@
 }
 
 .lists {
-  display: flex;
-  flex-direction: column;
-  width: 10%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 16px;
 }
