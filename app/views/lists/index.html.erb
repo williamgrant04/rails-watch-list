@@ -4,6 +4,8 @@
 
 <div class="lists">
   <% @lists.each do |list| %>
-    <%= link_to list.name, list_path(list), class: "list-links" %>
+    <div style="background-image: url(<%= cl_image_url %>);">
+      <%= link_to list.name, list_path(list), class: "list-links" %>
+    </div>
   <% end %>
 </div>
