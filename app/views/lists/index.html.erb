@@ -5,7 +5,7 @@
 <div class="lists">
   <% @lists.each do |list| %>
     <%= link_to list_path(list) do %>
-      <div style="background-image: url('<%= list.image.key ? cl_image_path(list.image.key) : "" %>');">
+      <div class="list-wrapper" style="height: 200px; background-image: url('<%= list.image.key ? cl_image_path(list.image.key, height: 200, crop: :fill) : "" %>');">
         <h2 class="list-link"><%= list.name %></h2>
       </div>
     <% end %>

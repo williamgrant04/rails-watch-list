@@ -13,8 +13,13 @@
 
 body {
   font-family: "Noto Sans", sans-serif;
+  margin: 0;
 }
 
 .page-container {
   margin: 20px 10vw;
+
+  a {
+    text-decoration: none;
+  }
 }

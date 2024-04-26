@@ -1,8 +1,10 @@
-<h1>List: <%= @list.name %></h1>
+<div class="banner" style="background-image: url('<%= @list.image.key ? cl_image_path(@list.image.key) : "" %>');">
+  <h1>List: <%= @list.name %></h1>
+</div>
 
 <%= link_to "New bookmark", bookmarks_path, class: "new-link" %>
 
-<div class="cards" style="background-image: url('<%= @list.image.key ? cl_image_path(@list.image.key) : "" %>');">
+<div class="cards">
   <% @bookmarks.each do |bookmark| %>
     <div class="card">
       <h2 class="movie-title"><%= bookmark.movie.title %></h2>

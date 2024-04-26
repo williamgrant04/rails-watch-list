@@ -1,6 +1,6 @@
 .create-list {
   display: inline-block;
-  margin-top: 10px;
+  margin: 10px 0;
   color: white;
   text-decoration: none;
   background-color: rgb(41, 41, 41);
@@ -18,26 +18,33 @@
 }
 
 .list-link {
-  display: inline-block;
-  margin-top: 10px;
-  color: rgb(41, 41, 41);
-  text-decoration: none;
+  margin: 0;
+  color: black;
   background-color: rgb(236, 236, 236);
   padding: 5px 10px;
   border-radius: 16px;
-  transition: 0.3s;
-  border: 2px solid transparent;
-
-  &:hover {
-    border: 2px solid rgba(236, 236, 236, 0.8);
-    background-color: rgb(41, 41, 41);
-    color: rgb(236, 236, 236);
-    border-radius: 8px;
-  }
 }
 
 .lists {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 16px;
+}
+
+.list-wrapper {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 24px;
+  border: 1px solid rgb(20, 20, 20);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
+  transition: 0.3s;
+
+  &:hover {
+    border-radius: 16px;
+    border: 1px solid grey;
+  }
 }
